@@ -18,7 +18,14 @@ public partial class MainView : UserControl
     {
         try
         {
-            await AnimateAsync();
+            if (!App.IsBrowser)
+            {
+                await AnimateAsync();
+            }
+            else
+            {
+                await AnimateAsync();
+            }
             base.OnAttachedToVisualTree(e);
         }
         catch (Exception)

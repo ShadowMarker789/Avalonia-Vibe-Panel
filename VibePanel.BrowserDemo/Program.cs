@@ -9,6 +9,7 @@ internal sealed partial class Program
 {
     private static Task Main(string[] args)
     {
+        App.IsBrowser = true;
         App.OnInit += App_OnInit;
 
         return BuildAvaloniaApp()

@@ -55,4 +55,6 @@ public class App : Application
     }
 
     public static event EventHandler<IApplicationLifetime?>? OnInit;
+
+    public static bool IsBrowser { get; set; } = false;
 }
