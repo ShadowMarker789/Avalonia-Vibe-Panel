@@ -1,16 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WebAssembly">
-  <PropertyGroup>
-    <TargetFramework>net9.0-browser</TargetFramework>
-    <OutputType>Exe</OutputType>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0-browser</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Nullable>enable</Nullable>
+		<WasmBuildNative>true</WasmBuildNative>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Avalonia.Browser" Version="11.2.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Avalonia.Browser" Version="11.2.3" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\VibePanel\VibePanel.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\VibePanel\VibePanel.csproj" />
+	</ItemGroup>
 </Project>
